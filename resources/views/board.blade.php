@@ -8,10 +8,11 @@
 
 @section('content')
 <div class="card">
-  <div class="col-md-3 col-sm-6 col-12">
+  <div class="card">
+    <table id="table" class="table table-bordered">
       <thead>
         <tr>
-          <th style="width: 10px">Backlog</th><th>To Do</th><th>In Progress</th><th>Done</th>
+          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
         </tr>
       </thead>
       <tbody>
@@ -28,6 +29,7 @@
           <td><span class="badge bg-warning">70%</span></td>
         </tr>
       </tbody>
+    </table>
   </div>
 </div>
 @stop
