@@ -7,9 +7,9 @@
 @stop
 
 @section('content')
-    <table id="table" class="table table-bordered">
+<table id="table" class="table table-bordered">
 <div class="row">
-  <div class="card-body">
+  <div class="col-md-3 col-sm-6 col-12">
       <thead>
         <tr>
           <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
