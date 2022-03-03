@@ -19,7 +19,7 @@ Route::get('/', function () {
 Route::get('/todos', function () {
     return view('todos');
 });
-Route::get('/schedule', function () {
+Route::get('/calendar', function () {
     return view('calendar');
 });
 Route::get('/board', function () {
