@@ -19,13 +19,12 @@ Route::get('/', function () {
 Route::get('/todos', function () {
     return view('todos');
 });
-Route::get('/calendar', function () {
+Route::get('/schedule', function () {
     return view('calendar');
 });
 Route::get('/board', function () {
     return view('board');
 });
-URL::forceScheme('https');
 Route::get('/db-test', function () {
     try{
         \DB::connection()->getPDO();
