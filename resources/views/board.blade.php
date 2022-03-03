@@ -8,8 +8,8 @@
 
 @section('content')
 <div class="card">
-  <div class="card">
     <table id="table" class="table table-bordered">
+  <div class="card">
       <thead>
         <tr>
           <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
@@ -29,8 +29,8 @@
           <td><span class="badge bg-warning">70%</span></td>
         </tr>
       </tbody>
-    </table>
-  </div>
+	</div>
+   <table id="table" class="table table-bordered">
 </div>
 @stop
 
