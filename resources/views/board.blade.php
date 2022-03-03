@@ -12,7 +12,7 @@
   <div class="col-md-3 col-sm-6 col-12">
       <thead>
         <tr>
-          <th style="width: 10px">#</th><th>Task</th><th>Progress</th><th style="width: 40px">Label</th>
+          <th style="width: 10px">Backlog</th><th>To Do</th><th>In Progress</th><th>Done</th>
         </tr>
       </thead>
       <tbody>
