@@ -7,7 +7,10 @@
 @stop
 
 @section('content')
-<div class="col-md-3 col-sm-6 col-12">
+<div class="content">
+        <div class="container-fluid">
+            <div class="row">
+  <div class="col-md-3 col-sm-6 col-12">
     <div class="card card-row card-secondary">
       <div class="card-header">
       <h3 class="card-title">
@@ -72,6 +75,92 @@
       </div>
     </div>
   </div>
+
+  <div class="col-md-3 col-sm-6 col-12">
+    <div class="card card-row card-primary">
+      <div class="card-header">
+      <h3 class="card-title">
+      To Do
+      </h3>
+      </div>
+      <div class="card-body">
+      <div class="card card-primary card-outline">
+      <div class="card-header">
+      <h5 class="card-title">Create first milestone</h5>
+      <div class="card-tools">
+      <a href="#" class="btn btn-tool btn-link">#5</a>
+      <a href="#" class="btn btn-tool">
+      <i class="fas fa-pen"></i>
+      </a>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6 col-12">
+    <div class="card card-row card-default">
+      <div class="card-header bg-info">
+      <h3 class="card-title">
+      In Progress
+      </h3>
+      </div>
+      <div class="card-body">
+      <div class="card card-light card-outline">
+      <div class="card-header">
+      <h5 class="card-title">Update Readme</h5>
+      <div class="card-tools">
+      <a href="#" class="btn btn-tool btn-link">#2</a>
+      <a href="#" class="btn btn-tool">
+      <i class="fas fa-pen"></i>
+      </a>
+      </div>
+      </div>
+      <div class="card-body">
+      <p>
+      Post application address in the Readme.
+      </p>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3 col-sm-6 col-12">
+    <div class="card card-row card-success">
+      <div class="card-header">
+      <h3 class="card-title">
+      Done
+      </h3>
+      </div>
+      <div class="card-body">
+      <div class="card card-primary card-outline">
+      <div class="card-header">
+      <h5 class="card-title">Create repo</h5>
+      <div class="card-tools">
+      <a href="#" class="btn btn-tool btn-link">#1</a>
+      <a href="#" class="btn btn-tool">
+      <i class="fas fa-pen"></i>
+      </a>
+      </div>
+      </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<div>
+
+        </div>
+    </div>
+
+</div>
+        
+        
+        
+        
+        
+    </div>
 @stop
 
 @section('css')
