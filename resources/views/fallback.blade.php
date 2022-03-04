@@ -3,7 +3,7 @@
 @section('title', 'Page Not Found')
 
 @section('content_header')
-    <h1>Errir</h1>
+    <h1>Error</h1>
 @stop
 
 @section('content')
