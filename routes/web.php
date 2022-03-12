@@ -36,6 +36,11 @@ Route::get('/db-migrate', function(){
     Artisan::call('migrate');
     echo Artisan::output();
 });
+Route::get('/events-feed', function(){
+    $events = Calendar::select('title', 'start_at AS start', 'end_at AS end')->get();
+    return json_encode( compact('events')['events'] );
+ 
+});
 
 Route::fallback(function(){
 	return view('fallback');

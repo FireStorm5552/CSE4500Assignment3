@@ -1,9 +1,9 @@
 @extends('adminlte::page')
 
-@section('title', 'Calendar')
+@section('title', 'Add Event')
 
 @section('content_header')
-    <h1>Calendar</h1>
+    <h1>Add Event</h1>
 @stop
 @section('content')
 <form method="POST" action="{{ route('calendar.store') }}" >
