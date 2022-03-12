@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::resource('/todos', TodoController::class);
+URL::forceScheme('https');
 Route::get('/calendar', function () {
     return view('calendar');
 });
