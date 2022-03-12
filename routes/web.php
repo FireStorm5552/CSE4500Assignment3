@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\TodoController;
-
+use App\Http\Controllers\CalendarController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -19,9 +19,7 @@ Route::get('/', function () {
 });
 Route::resource('/todos', TodoController::class);
 URL::forceScheme('https');
-Route::get('/calendar', function () {
-    return view('calendar');
-});
+Route::resource('/calendar', CalendarController::class);
 Route::get('/board', function () {
     return view('board');
 });
