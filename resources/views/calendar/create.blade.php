@@ -1,15 +1,16 @@
 @extends('adminlte::page')
 
-@section('title', 'To Do List')
+@section('title', 'Calendar')
 
 @section('content_header')
-    <h1>To Do's</h1>
+    <h1>Calendar</h1>
 @stop
 @section('content')
-<form method="POST" action="{{ route('todos.store') }}" >
+<form method="POST" action="{{ route('calendar.store') }}" >
     @csrf
     <x-adminlte-input name="title" label="Title" />
-    <x-adminlte-input name="progress" type="number" min=0 max=100 label="Progress" />
+    <x-adminlte-input name="start_at" type="dateTime" label="Start Time" />
+    <x-adminlte-input name="end_at" type="dateTime" label="End Time" />
     <x-adminlte-button type="Submit" label="Submit" />
 </form>
 @stop
