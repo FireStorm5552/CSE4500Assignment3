@@ -6,7 +6,7 @@
     <h1>Add Event</h1>
 @stop
 @section('content')
-<form method="POST" action="{{ route('events-feed.store') }}" >
+<form method="POST" action="{{ route('event.store') }}" >
     @csrf
     <x-adminlte-input name="title" label="Title" />
     <x-adminlte-input name="start_at" type="dateTime-local" label="Start Time" />
