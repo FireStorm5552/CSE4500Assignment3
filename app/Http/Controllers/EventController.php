@@ -46,7 +46,7 @@ class EventController extends Controller
         'start_at' => $request->start_at,
         'end_at' => $request->end_at, 
    ]);
-   return $this->index();
+   return view('calendar');
     }
 
     /**

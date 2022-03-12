@@ -33,7 +33,7 @@ class TodoController extends Controller
              'progress' => $request->progress, 
         ]);
 
-        return view('/calendar');
+        return $this->index();
     }
 
     public function show($id)
