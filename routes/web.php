@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 Route::resource('/todos', TodoController::class);
 URL::forceScheme('https');
-Route::resource('/calendar', CalendarController::class);
+Route::resource('/events-feed', CalendarController::class);
 Route::get('/board', function () {
     return view('board');
 });
@@ -36,9 +36,8 @@ Route::get('/db-migrate', function(){
     Artisan::call('migrate');
     echo Artisan::output();
 });
-Route::get('/events-feed', function(){
-    $events = Calendar::select('title', 'start_at AS start', 'end_at AS end')->get();
-    return json_encode( compact('events')['events'] );
+Route::get('/calendar', function(){
+    return view('calendar');
  
 });
 
