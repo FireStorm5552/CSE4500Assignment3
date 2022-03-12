@@ -5,9 +5,8 @@
 @section('content_header')
     <h1>To Do's</h1>
 @stop
-
 @section('content')
-<form method="post" action="{{ route('todos.store') }}" >
+<form method="POST" action="{{ route('todos.store') }}" >
     @csrf
     <x-adminlte-input name="title" label="Title" />
     <x-adminlte-input name="progress" type="number" min=0 max=100 label="Progress" />
