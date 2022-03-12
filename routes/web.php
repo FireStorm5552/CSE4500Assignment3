@@ -19,7 +19,7 @@ Route::get('/', function () {
 });
 Route::resource('/todos', TodoController::class);
 URL::forceScheme('https');
-Route::resource('/events-feed', CalendarController::class);
+Route::resource('/calendar', CalendarController::class);
 Route::get('/board', function () {
     return view('board');
 });

@@ -25,7 +25,7 @@ class CalendarController extends Controller
      */
     public function create()
     {
-        return view('events-feed.create');
+        return view('calendar.create');
     }
 
     /**
